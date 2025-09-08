@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .mobile-frame {
+      width: 375px;
+      min-height: 100vh;
+      background-color: white;
+      border: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .auth-status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: lightgreen;
+      border: 1px solid green;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .auth-status span {
+      color: darkgreen;
+      font-size: 0.875rem;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid gray;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      background-color: lightblue;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.875rem;
+    }
+
+    .button {
+      padding: 0.5rem 1rem;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .button-outline {
+      padding: 0.5rem 1rem;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      border-radius: 0.375rem;
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-frame">
+
+    <div class="auth-status">
+      <span>✓ Authenticated</span>
+      <span>28 min left</span>
+    </div>
+
+    <div class="highlight">
+      <strong>✓ No re-login required:</strong> Your session persists throughout registration, preventing interruptions during high-demand periods.
+    </div>
+
+    <div class="card">
+      <h3>Course Registration</h3>
+      <p>Find courses and register in one streamlined process</p>
+      <button class="button">Start Registration</button>
+    </div>
+
+    <div class="card">
+      <h3>My Schedule</h3>
+      <p>View registered courses</p>
+      <button class="button-outline">View Schedule</button>
+    </div>
+
+  </div>
+</body>
+</html>
